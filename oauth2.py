@@ -35,6 +35,9 @@ class OAuth2Client:
         # browser from cross site forgery attacks. While we don't need it as a 
         # command-line application, we still send a randomised state nevertheless 
         # to demonstrate.
+
+    def existing_access_token(self,token):
+        self._access_token = token
         
     
     def start_auth(self):
@@ -96,6 +99,7 @@ class OAuth2Client:
         if "access_token" in response_object:
             print("Auth successful, access token received.") 
             self._access_token = response_object["access_token"]
+            print(self._access_token)
 
             if "refresh_token" in response_object:
                 self._refresh_token = response_object["refresh_token"]

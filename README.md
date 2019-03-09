@@ -1,9 +1,9 @@
-Example Monzo Transaction Receipts API Client
+Example Monzo Pots API Client
 =========
+Modified from https://github.com/monzo/reference-receipts-app
+Allows for depositing/withdrawing from pots.
+Prints the access token to allow re-use (cut down on emails).
 
-The Transaction Receipts API is a new, experimental API for you to attach or read detailed receipt data of Monzo transactions. Whether it is using your card at a shop, or sending someone money for a favour, keeping all your spending data in one place has never been easier! With this API, you can decide how to source or generate the receipt.
-
-![Transaction Receipt View](https://user-images.githubusercontent.com/42541688/51318101-42637c00-1a51-11e9-98eb-f73cacff9bdc.jpg)
 
 ## Getting Started
 You need a Monzo account to register and manage your OAuth2 API clients. If you don't yet have a Monzo account, you can [open an account](https://monzo.com) on your phone now -- it takes no more than a few minutes with an ID on hand. Search for `Monzo` in App Store and Play Store.
